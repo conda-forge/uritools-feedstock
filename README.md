@@ -14,14 +14,16 @@ Summary: RFC 3986 compliant, Unicode-aware, scheme-agnostic replacement for urlp
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/uritools-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/uritools-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/uritools-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/uritools-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/uritools-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/uritools-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/uritools-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/uritools-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/uritools-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/uritools-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/uritools-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/uritools-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/uritools/badges/version.svg)](https://anaconda.org/conda-forge/uritools)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/uritools/badges/downloads.svg)](https://anaconda.org/conda-forge/uritools)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-uritools-green.svg)](https://anaconda.org/conda-forge/uritools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/uritools.svg)](https://anaconda.org/conda-forge/uritools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/uritools.svg)](https://anaconda.org/conda-forge/uritools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/uritools.svg)](https://anaconda.org/conda-forge/uritools) |
 
 Installing uritools
 ===================
