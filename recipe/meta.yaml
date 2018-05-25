@@ -1,6 +1,6 @@
 {% set name = "uritools" %}
-{% set version = "2.0.0"%}
-{% set sha256 = "20d7881a947cd3c3bb452e2b541f44acc52febe9c4e3f6d05c55d559fb208c50" %}
+{% set version = "2.1.1" %}
+{% set sha256 = "64369ece6f5c6ab18cba2cd0b199da40ffb9390493da1ff5c1d94b6ed107b401" %}
 
 package:
   name: {{ name|lower }}
