@@ -19,8 +19,10 @@ build:
 requirements:
   build:
     - python
-    - setuptools
-
+    - pip
+  host:
+    - python
+    - pip
   run:
     - python
     - ipaddress  # [py27]
