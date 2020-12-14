@@ -1,31 +1,25 @@
 {% set name = "uritools" %}
 {% set version = "3.0.0" %}
-{% set sha256 = "405917a31ce58a57c8ccd0e4ea290f38baf2f4823819c3688f5331f1aee4ccb0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 405917a31ce58a57c8ccd0e4ea290f38baf2f4823819c3688f5331f1aee4ccb0
 
 build:
+  noarch: python
   number: 2
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
-  skip: True  # [ py < 35 ]
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python
-    - pip
   host:
-    - python
+    - python >=3.5
     - pip
   run:
-    - python
-    - ipaddress  # [py27]
+    - python >=3.5
 
 test:
   imports:
