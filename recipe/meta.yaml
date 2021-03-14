@@ -1,5 +1,5 @@
 {% set name = "uritools" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 405917a31ce58a57c8ccd0e4ea290f38baf2f4823819c3688f5331f1aee4ccb0
+  sha256: a3e9c794d44fdbd54642dcb7d6ef3ba9866d953eb34f65aeca3754b7ad5c1ea0
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -36,7 +36,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'RFC 3986 compliant, Unicode-aware, scheme-agnostic replacement for urlparse'
+  summary: RFC 3986 compliant, Unicode-aware, scheme-agnostic replacement for urlparse
   dev_url: https://github.com/tkem/uritools/
   doc_url: http://pythonhosted.org/uritools/
 
