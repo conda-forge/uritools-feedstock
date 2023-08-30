@@ -1,5 +1,5 @@
 {% set name = "uritools" %}
-{% set version = "4.0.1" %}
+{% set version = "4.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: efc5c3a6de05404850685a8d3f34da8476b56aa3516fbf8eff5c8704c7a2826f
+  sha256: 04df2b787d0eb76200e8319382a03562fbfe4741fd66c15506b08d3b8211d573
 
 build:
   noarch: python
