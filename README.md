@@ -1,11 +1,11 @@
-About uritools
-==============
+About uritools-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/uritools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/tkem/uritools/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/uritools-feedstock/blob/main/LICENSE.txt)
 
 Summary: RFC 3986 compliant, Unicode-aware, scheme-agnostic replacement for urlparse
 
