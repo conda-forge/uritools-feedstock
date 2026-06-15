@@ -1,5 +1,5 @@
 {% set name = "uritools" %}
-{% set version = "6.0.1" %}
+{% set version = "6.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2f9e9cb954e7877232b2c863f724a44a06eb98d9c7ebdd69914876e9487b94f8
+  sha256: fa60028843a8be651699a1ee2b399066eeaef349224b32a177efa4aeba463f00
 
 build:
   number: 0
@@ -17,7 +17,8 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=46.4.0
+    - setuptools >=80
+    - setuptools-scm >=8.2
     - pip
   run:
     - python >={{ python_min }}
