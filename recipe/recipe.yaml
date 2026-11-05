@@ -1,0 +1,55 @@
+schema_version: 1
+
+context:
+  version: "6.1.4"
+
+package:
+  name: uritools
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/u/uritools/uritools-${{ version }}.tar.gz
+  sha256: d0b0b589582c29c5085aa1815e4abca59ded3d4420315743328166d65ee73429
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools >=80
+    - setuptools-scm >=8.2
+    - pip
+  run:
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports:
+        - uritools
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+  - files:
+      source:
+        - tests/
+    requirements:
+      run:
+        - python
+    script:
+      - python -m unittest discover -v
+
+about:
+  license: MIT
+  license_file: LICENSE
+  summary: RFC 3986 compliant, Unicode-aware, scheme-agnostic replacement for urlparse
+  homepage: https://github.com/tkem/uritools/
+  repository: https://github.com/tkem/uritools/
+  documentation: http://pythonhosted.org/uritools/
+
+extra:
+  recipe-maintainers:
+    - mgorny
