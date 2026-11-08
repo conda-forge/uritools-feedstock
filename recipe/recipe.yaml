@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "6.1.5"
+  version: "7.0.0"
 
 package:
   name: uritools
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/u/uritools/uritools-${{ version }}.tar.gz
-  sha256: 5a46002351b745a6910f24167abc1ba0a7f78818121fffb32dbe1fc7767f462f
+  sha256: 110b773e3f8fbaebcdcbe1377d04e418b1985adf69deeca4ed569f3e328cbf48
 
 build:
   number: 0
